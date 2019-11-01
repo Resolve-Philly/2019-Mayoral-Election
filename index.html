@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Broke in Philly Election Database</title>
+    <script
+      src="https://kit.fontawesome.com/b07b5bd511.js"
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/custom.css">
+  </head>
+  <body>
+    <!--WEBSITE HEADER AND MAIN MENU-->
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a class="navbar-brand" href="#" id="logo">Election Database</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://brokeinphilly.org/">
+              Broke in Philly
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://brokeinphilly.org/who-we-are/">
+              Who We Are
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HEADING W/ INTRO TEXT -->
+    <div class="container">
+      <div class="text-center header-img">
+        <img
+          class="img-fluid"
+          src="https://smcsites.com/brokeinphilly/files/2019/04/broke_election_final.png"
+        />
+      </div>
+      <div class="page-header">
+        <h1>Broke asked your candidates</h1>
+        <hr />
+      </div>
+      <div class="page-content">
+        <p>
+          Broke in Philly, an initiative of Resolve Philadelphia in partnership with more than 20 local news outlets producing coverage on economic mobility, has sent a list of eight questions to all of Philadelphia's 2019 Mayoral and City Council candidates. The questions were compiled through public suggestions and voting from readers and collaboration editors, and ask the candidates to explain how they plan to fight poverty and strengthen economic mobility in Philadelphia.
+        </p>
+        <br />
+        <p>
+          Candidates' responses will be shared with the public here so Philadelphia residents can use this information to make an informed choice when casting their ballot. Responses will also be used in Broke in Philly coverage of the elections.
+        </p>
+        <br />
+        <p>
+          The questions were compiled by circulating a survey inviting readers to submit questions they wished to pose to candidates about Philadelphia's economic reality. Broke in Philly received more than 300 suggested questions, which were then divided into categories like jobs, taxes and education. Reporting partners then published polls asking readers to choose their favorite of the three most common questions in each category. Combining feedback from the public and local media's editorial input, Broke in Philly then finalized a list of eight questions to be distributed to candidates.
+        </p>
+      </div>
+      <hr />
+    </div>
+
+    <!-- CARDS -->
+    <div class="container">
+      <form>
+        <input type="radio" name="version" value="on-response" checked /> See the candidates on the November ballot who responded. <br />
+        <input type="radio" name="version" value="on-no-response" /> See the candidates on the November ballot who didn't respond. <br />
+        <input type="radio" name="version" value="not-on-ballot" /> See the past candidates who are not on the November ballot. <br />
+        <input type="radio" name="version" value="espanol" /> En Español
+        <hr />
+        <div id="on-response">
+          <div class="ballotStatus">
+            <h5>
+              These candidates are on the November ballot
+            </h5>
+          </div>
+          <p>
+            <small>
+              Click on a candidate to read their full response, and hover over a question to see what we asked them. You can sort and filter the candidates using the menu below.
+            </small>
+          </p>
+          <iframe
+            class="airtable-embed"
+            src="https://airtable.com/embed/shrMIoeRyDGK92ZWk?backgroundColor=red&viewControls=on"
+            frameborder="0"
+            onmousewheel=""
+            width="100%"
+            height="1000"
+            style="background: transparent; border: 1px solid #ccc;">
+            </iframe>
+        </div>
+        <div id="on-no-response">
+          <div class="ballotStatus">
+            <h5>
+              These candidates are on the November ballot
+            </h5>
+            <p>
+              <small>
+                You can sort and filter the candidates using the menu
+                below
+              </small>
+            </p>
+          </div>
+          <iframe
+            class="airtable-embed"
+            src="https://airtable.com/embed/shrVzGyvaRt3S36WY?backgroundColor=red&viewControls=on"
+            frameborder="0"
+            onmousewheel=""
+            width="100%"
+            height="1000"
+            style="background: transparent; border: 1px solid #ccc;">
+            </iframe>
+        </div>
+        <div id="not-on-ballot">
+          <div class="ballotStatus">
+            <h5>
+              These candidates are not on the November ballot
+            </h5>
+            <p>
+              <small>
+                Click on a candidate to read their full response, and hover over a question to see what we asked them. You can sort and filter the candidates using the menu below.
+              </small>
+            </p>
+          </div>
+          <iframe
+            class="airtable-embed"
+            src="https://airtable.com/embed/shrPJaTDxGQtKFBcb?backgroundColor=red&viewControls=on"
+            frameborder="0"
+            onmousewheel=""
+            width="100%"
+            height="1000"
+            style="background: transparent; border: 1px solid #ccc;">
+          </iframe>
+        </div>
+        <div id="espanol">
+          <p>
+            <small>
+              Puedes explorar las respuestas de los candidatos por seleccionando candidatos para ver y comparar. O puedes hacer clic en un candidato para ver sus respuestas a todas nuestras preguntas.
+            </small>
+          </p>
+          <iframe
+            class="airtable-embed"
+            src="https://airtable.com/embed/shrE9V5TIum6djfoA?backgroundColor=red&viewControls=on"
+            frameborder="0"
+            onmousewheel=""
+            width="100%"
+            height="533"
+            style="background: transparent; border: 1px solid #ccc;">
+          </iframe>
+        </div>
+      </form>
+    </div>
+
+    <!--FOOTER -->
+    <footer class="page-footer font-small pt-4">
+      <div class="container">
+        <div class="container-fluid text-center text-md-left">
+          <h5 class="text-uppercase">Broke in Philly</h5>
+          <div class="row">
+            <!-- Grid row -->
+            <div class="col-md-3 mt-md-0 mt-3">
+              <!-- Grid col -->
+              <small>
+                Photos: Courtesy <a href="https://www.nbcphiladelphia.com/" target="_blank">NBC10, Telemundo62</a> and <a href="https://northeasttimes.com/" target="_blank">Northeast Times</a>
+              </small>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3" />
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Grid col -->
+              <small>Site constructed by
+                <a href="https://twitter.com/ChristieJules" target="_blank">
+                  Julie Christie
+                </a>
+              </small>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Grid col -->
+              <small>Questions or fixes?
+                <a href="mailto:julie@resolvephilly.org" target="_blank">
+                  Get in touch
+                </a>
+              </small>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+              <!-- Grid col -->
+              <small>Last updated: Oct. 31, 2018</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        <small>
+          © 2019 Copyright |<a href="https://resolvephilly.org/"> Resolve Philadelphia</a>
+        </small>
+      </div>
+    </footer>
+    <!-- END Footer -->
+
+  </body>
+</html>
